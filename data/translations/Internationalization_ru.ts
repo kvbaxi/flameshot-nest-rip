@@ -1249,7 +1249,7 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
+        <source>Nest.rip API Key</source>
         <translation>Ключ API Imgur</translation>
     </message>
     <message>

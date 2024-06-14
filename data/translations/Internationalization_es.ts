@@ -1177,7 +1177,7 @@ Por favor, resuélvelos manualmente en el archivo de configuración.</translatio
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
+        <source>Nest.rip API Key</source>
         <translation>ID del cliente de la aplicación Imgur</translation>
     </message>
     <message>

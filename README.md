@@ -1,57 +1,63 @@
 <div align="center">
   <p>
     <h1>
-      <a href="https://github.com/flameshot-org/flameshot">
-        <img src="data/img/app/org.flameshot.Flameshot.svg" alt="Flameshot" />
+      <a href="https://github.com/kvbaxi/flameshot-nest-rip">
+        <img src="data/img/app/org.flameshot.Flameshot.svg" alt="Flameshot nest.rip" />
       </a>
       <br />
-      Flameshot
+      Flameshot nest.rip
     </h1>
     <h4>Powerful yet simple to use screenshot software.</h4>
   </p>
   <p>
-    <a href="https://github.com/flameshot-org/flameshot/actions?query=workflow%3APackaging%28Linux%29">
-      <img src="https://img.shields.io/github/actions/workflow/status/flameshot-org/flameshot/Linux-pack.yml?branch=master&label=gnu%2Flinux" alt="GNU/Linux Build Status" />
+    <a href="https://github.com/kvbaxi/flameshot-nest-rip/actions?query=workflow%3APackaging%28Linux%29">
+      <img src="https://img.shields.io/github/actions/workflow/status/kvbaxi/flameshot-nest-rip/Linux-pack.yml?branch=master&label=gnu%2Flinux" alt="GNU/Linux Build Status" />
     </a>
-    <a href="https://github.com/flameshot-org/flameshot/actions?query=workflow%3APackaging%28Windows%29">
-      <img src="https://img.shields.io/github/actions/workflow/status/flameshot-org/flameshot/Windows-pack.yml?branch=master&label=windows" alt="Windows Build Status" />
+    <a href="https://github.com/kvbaxi/flameshot-nest-rip/actions?query=workflow%3APackaging%28Windows%29">
+      <img src="https://img.shields.io/github/actions/workflow/status/kvbaxi/flameshot-nest-rip/Windows-pack.yml?branch=master&label=windows" alt="Windows Build Status" />
     </a>
-    <a href="https://github.com/flameshot-org/flameshot/actions?query=workflow%3APackaging%28MacOS%29">
-      <img src="https://img.shields.io/github/actions/workflow/status/flameshot-org/flameshot/MacOS-pack.yml?branch=master&label=macos" alt="MacOS Build Status" />
+    <a href="https://github.com/kvbaxi/flameshot-nest-rip/actions?query=workflow%3APackaging%28MacOS%29">
+      <img src="https://img.shields.io/github/actions/workflow/status/kvbaxi/flameshot-nest-rip/MacOS-pack.yml?branch=master&label=macos" alt="MacOS Build Status" />
     </a>
     <a href="https://flameshot.org/docs/installation/development-build/">
       <img src="https://img.shields.io/badge/nightly%20builds-available-%23AA00FF" alt="Nightly Build" />
     </a>
-    <a href="https://github.com/flameshot-org/flameshot/releases">
-      <img src="https://img.shields.io/github/release/flameshot-org/flameshot.svg" alt="Latest Stable Release" />
+    <a href="https://github.com/kvbaxi/flameshot-nest-rip/releases">
+      <img src="https://img.shields.io/github/release/kvbaxi/flameshot-nest-rip.svg" alt="Latest Stable Release" />
     </a>
-    <a href="https://github.com/flameshot-org/flameshot/releases">
-      <img src="https://img.shields.io/github/downloads/flameshot-org/flameshot/total.svg" alt="Total Downloads" />
+    <a href="https://github.com/kvbaxi/flameshot-nest-rip/releases">
+      <img src="https://img.shields.io/github/downloads/kvbaxi/flameshot-nest-rip/total.svg" alt="Total Downloads" />
     </a>
-    <a href="https://github.com/flameshot-org/flameshot/blob/master/LICENSE">
-      <img src="https://img.shields.io/github/license/flameshot-org/flameshot.svg" alt="License" />
+    <a href="https://github.com/kvbaxi/flameshot-nest-rip/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/kvbaxi/flameshot-nest-rip.svg" alt="License" />
     </a>
   <a href="https://hosted.weblate.org/engage/flameshot/">
     <img src="https://hosted.weblate.org/widgets/flameshot/-/flameshot/svg-badge.svg" alt="Translation status" />
   </a>
   <a href="https://flameshot.org">
-      <img src="https://img.shields.io/github/release/flameshot-org/flameshot.svg?label=docs" alt="Docs" />
-    </a>
-    <br>
-    <a href="https://snapcraft.io/flameshot">
-      <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" />
-    </a>
-    <a href="https://flathub.org/apps/details/org.flameshot.Flameshot">
-      <img height="60" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.svg"/>
+      <img src="https://img.shields.io/github/release/kvbaxi/flameshot-nest-rip.svg?label=docs" alt="Docs" />
     </a>
   </p>
 </div>
 
+<div>
+  <p align="center"><font size="4">
+    <br><br>
+    ❔ <code>Flameshot nest.rip</code> is a fork of flameshot created by <a href="https://github.com/kvbaxi" title="kvba">kvba</a>. I never could find fine screenshot tool except for this one... BUT it never had custom upload option. So after learning something about C++ I thought about making my fork with <a href="https://nest.rip" title="nest.rip">nest.rip</a> uploader instead!
+    <br><br>
+    <b>Will I add custom uploader option?</b> Maybe... maybe not now as there's quite a lot of stuff to modify.
+    <br><br>
+    <b>❗ Currently deletion URL doesn't work but I'm gonna try to work on it in future.</b>
+    <br><br>
+    <b>❗ Currently only building is supported due to my lack of packaging knowledge. (any help is appreciated!)</b>
+    <br><br>
+  </font></p>
+</div>
 
 
 ## Preview
 
-![image](https://raw.githubusercontent.com/flameshot-org/flameshot/master/data/img/preview/animatedUsage.gif)
+![image](https://raw.githubusercontent.com/kvbaxi/flameshot-nest-rip/master/data/img/preview/animatedUsage.gif)
 
 ## Index
 
@@ -67,10 +73,6 @@
     - [On XFCE 4](#on-xfce-4)
 - [Considerations](#considerations)
 - [Installation](#installation)
-  - [Prebuilt Packages](#prebuilt-packages)
-  - [Packages from Repository](#packages-from-repository)
-  - [MacOS](#macos)
-  - [Windows](#windows)
 - [Compilation](#compilation)
   - [Dependencies](#dependencies)
     - [Compile-time](#compile-time)
@@ -256,7 +258,7 @@ Steps for using the configuration:
 
     ```shell
     cd ~/Desktop
-    wget https://raw.githubusercontent.com/flameshot-org/flameshot/master/docs/shortcuts-config/flameshot-shortcuts-kde.khotkeys
+    wget https://raw.githubusercontent.com/kvbaxi/flameshot-nest-rip/master/docs/shortcuts-config/flameshot-shortcuts-kde.khotkeys
     ```
 3. Make sure you have the `khotkeys` installed using your package manager to enable custom shortcuts in KDE Plasma.
 4. Go to _System Settings_ → _Shortcuts_ → _Custom Shortcuts_.
@@ -329,61 +331,7 @@ Now every time you press <kbd>Prt Sc</kbd> it will start Flameshot GUI instead o
 
 ## Installation
 
-Flameshot can be installed on Linux, Microsoft Windows, and macOS.
-
-### Prebuilt packages
-
-Some prebuilt packages are provided on [the release page of the GitHub project repository](https://github.com/flameshot-org/flameshot/releases).
-
-### Packages from Repository
-
-There are packages available in the repository of some Linux distributions:
-
-- [Arch](https://archlinux.org/packages/extra/x86_64/flameshot/): `pacman -S flameshot`
-  + Snapshot also available via AUR: [flameshot-git](https://aur.archlinux.org/packages/flameshot-git).
-- [Debian 10+](https://tracker.debian.org/pkg/flameshot): `apt install flameshot`
-  + Package for Debian 9 ("Stretch") also [available via stretch-backports](https://backports.debian.org/).
-- [Ubuntu 18.04+](https://launchpad.net/ubuntu/+source/flameshot): `apt install flameshot`
-- [openSUSE](https://software.opensuse.org/package/flameshot): `zypper install flameshot`
-- [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/flameshot): `xbps-install flameshot`
-- [Solus](https://dev.getsol.us/source/flameshot/): `eopkg it flameshot`
-- [Fedora](https://src.fedoraproject.org/rpms/flameshot): `dnf install flameshot`
-- [NixOS](https://search.nixos.org/packages?query=flameshot): `nix-env -iA nixos.flameshot`
-- [Snap/Flatpak/AppImage](https://github.com/flameshotapp/packages)
-- [Docker](https://github.com/ManuelLR/docker-flameshot)
-- [Windows](https://github.com/majkinetor/au-packages/tree/master/flameshot)
-
-### MacOS
-
-- [MacPorts](https://www.macports.org): `sudo port selfupdate && sudo port install flameshot`
-- [Homebrew](https://brew.sh): `brew install --cask flameshot`
-
-**Note** that because of macOS security features, you may not be able to open flameshot when installed using brew.
-If you see the message `“flameshot” cannot be opened because the developer cannot be verified.` you will need to
-follow the steps below:
-1. Go to the Applications folder (Finder > Go > Applications, or <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>A</kbd>)
-1. Right-Click on "flameshot.app" and choose "Open" from the context menu
-2. In the dialog click "Open"
-
-After following all those steps above, `flameshot` will open without problems in your Mac.
-
-### Windows
-
-- [Chocolatey](https://chocolatey.org/packages/flameshot)
-
-<details>
-  <summary>Expand this section to see what distros are using an up to date version of flameshot</summary>
-  <a href="https://repology.org/metapackage/flameshot/versions">
-    <img src="https://repology.org/badge/vertical-allrepos/flameshot.svg" alt="Packaging status">
-  </a>
-</details>
-
-### Tray icon
-
-**Note** that for the Flameshot icon to appear in your tray area, you should have a systray software installed. This is especially true for users who use minimal [window managers](https://wiki.archlinux.org/index.php/window_manager) such as [dwm](https://dwm.suckless.org/). In some [Desktop Environment](https://wiki.archlinux.org/index.php/Desktop_environment) installations (e.g Gnome), the systray might be missing and you can install an application or plugin (e.g [Gnome shell extension](https://extensions.gnome.org/extension/1503/tray-icons/)) to add the systray to your setup. It has been [reported](https://github.com/flameshot-org/flameshot/issues/1009#issuecomment-700781081)) that icon of some software, including Flameshot, does not show in [gnome-shell-extension-appindicator](https://github.com/ubuntu/gnome-shell-extension-appindicator).
-
-
-Alternatively, in case you don't want to have a systray, you can always call Flameshot from the terminal. See [Usage section](#usage).
+**Currently instalation is unsupported! Please try building it yourself (or try to create installation file yourself for now)**
 
 ## Compilation
 

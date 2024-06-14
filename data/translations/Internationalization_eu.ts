@@ -1209,7 +1209,7 @@ Mesedez, konpon itzazu eskuz konfigurazio fitxategian.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
+        <source>Nest.rip API Key</source>
         <translation>Imgur aplikazioaren bezeroaren IDa</translation>
     </message>
     <message>

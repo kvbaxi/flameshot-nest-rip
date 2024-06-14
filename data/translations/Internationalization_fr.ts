@@ -1137,8 +1137,8 @@ Veuillez résoudre ce problème manuellement depuis le fichier de configuration.
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="550"/>
-        <source>Imgur Application Client ID</source>
-        <translation>Imgur Application Client ID</translation>
+        <source>Nest.rip API Key</source>
+        <translation>Nest.rip API Key</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="581"/>

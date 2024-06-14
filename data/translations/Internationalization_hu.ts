@@ -1015,8 +1015,8 @@ Please solve them manually in the configuration file.</translation>
         <translation>Enable Copy on Double Click</translation>
     </message>
     <message>
-        <source>Imgur Application Client ID</source>
-        <translation>Imgur Application Client ID</translation>
+        <source>Nest.rip API Key</source>
+        <translation>Nest.rip API Key</translation>
     </message>
 </context>
 <context>

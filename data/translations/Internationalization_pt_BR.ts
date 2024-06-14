@@ -1213,7 +1213,7 @@ Por favor, resolva-os manualmente no arquivo de configuração.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
+        <source>Nest.rip API Key</source>
         <translation>ID do Cliente do Aplicativo Imgur</translation>
     </message>
     <message>

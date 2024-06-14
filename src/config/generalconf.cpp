@@ -549,7 +549,7 @@ void GeneralConf::initUploadHistoryMax()
 
 void GeneralConf::initUploadClientSecret()
 {
-    auto* box = new QGroupBox(tr("Imgur Application Client ID"));
+    auto* box = new QGroupBox(tr("Nest.rip API Key"));
     box->setFlat(true);
     m_layout->addWidget(box);
 

@@ -1162,7 +1162,7 @@ Ratkaise ne käsin muuttamalla asetustiedostoa.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
+        <source>Nest.rip API Key</source>
         <translation>Imgur-sovelluksen asiakastunnus</translation>
     </message>
     <message>

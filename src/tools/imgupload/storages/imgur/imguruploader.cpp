@@ -16,6 +16,7 @@
 #include <QNetworkRequest>
 #include <QShortcut>
 #include <QUrlQuery>
+#include <QHttpPart>
 
 ImgurUploader::ImgurUploader(const QPixmap& capture, QWidget* parent)
   : ImgUploaderBase(capture, parent)
@@ -33,11 +34,11 @@ void ImgurUploader::handleReply(QNetworkReply* reply)
     m_currentImageName.clear();
     if (reply->error() == QNetworkReply::NoError) {
         QJsonDocument response = QJsonDocument::fromJson(reply->readAll());
-        QJsonObject json = response.object();
-        QJsonObject data = json[QStringLiteral("data")].toObject();
-        setImageURL(data[QStringLiteral("link")].toString());
+        QJsonObject data = response.object();
+        //QJsonObject data = json[QStringLiteral("data")].toObject();
+        setImageURL(data[QStringLiteral("fileURL")].toString());
 
-        auto deleteToken = data[QStringLiteral("deletehash")].toString();
+        auto deleteToken = data[QStringLiteral("deletionURL")].toString();
 
         // save history
         m_currentImageName = imageURL().toString();
@@ -49,7 +50,7 @@ void ImgurUploader::handleReply(QNetworkReply* reply)
         // save image to history
         History history;
         m_currentImageName =
-          history.packFileName("imgur", deleteToken, m_currentImageName);
+          history.packFileName("nestrip", deleteToken, m_currentImageName);
         history.save(pixmap(), m_currentImageName);
 
         emit uploadOk(imageURL());
@@ -65,22 +66,23 @@ void ImgurUploader::upload()
     QBuffer buffer(&byteArray);
     pixmap().save(&buffer, "PNG");
 
-    QUrlQuery urlQuery;
-    urlQuery.addQueryItem(QStringLiteral("title"), QStringLiteral(""));
-    QString description = FileNameHandler().parsedPattern();
-    urlQuery.addQueryItem(QStringLiteral("description"), description);
+    QHttpMultiPart *multiPart = new QHttpMultiPart(QHttpMultiPart::FormDataType);
 
-    QUrl url(QStringLiteral("https://api.imgur.com/3/image"));
-    url.setQuery(urlQuery);
+    QHttpPart imagePart;
+    imagePart.setHeader(QNetworkRequest::ContentTypeHeader, QVariant("image/png"));
+    imagePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"files\"; filename=\"image.png\""));
+    imagePart.setBody(byteArray);
+
+    multiPart->append(imagePart);
+
+    QUrl url(QStringLiteral("https://nest.rip/api/files/upload"));
     QNetworkRequest request(url);
-    request.setHeader(QNetworkRequest::ContentTypeHeader,
-                      "application/application/x-www-form-urlencoded");
     request.setRawHeader("Authorization",
-                         QStringLiteral("Client-ID %1")
+                         QStringLiteral("%1")
                            .arg(ConfigHandler().uploadClientSecret())
                            .toUtf8());
 
-    m_NetworkAM->post(request, byteArray);
+    m_NetworkAM->post(request, multiPart);
 }
 
 void ImgurUploader::deleteImage(const QString& fileName,
