@@ -19,9 +19,6 @@
     <a href="https://github.com/kvbaxi/flameshot-nest-rip/actions?query=workflow%3APackaging%28MacOS%29">
       <img src="https://img.shields.io/github/actions/workflow/status/kvbaxi/flameshot-nest-rip/MacOS-pack.yml?branch=master&label=macos" alt="MacOS Build Status" />
     </a>
-    <a href="https://flameshot.org/docs/installation/development-build/">
-      <img src="https://img.shields.io/badge/nightly%20builds-available-%23AA00FF" alt="Nightly Build" />
-    </a>
     <a href="https://github.com/kvbaxi/flameshot-nest-rip/releases">
       <img src="https://img.shields.io/github/release/kvbaxi/flameshot-nest-rip.svg" alt="Latest Stable Release" />
     </a>
@@ -31,11 +28,8 @@
     <a href="https://github.com/kvbaxi/flameshot-nest-rip/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/kvbaxi/flameshot-nest-rip.svg" alt="License" />
     </a>
-  <a href="https://hosted.weblate.org/engage/flameshot/">
-    <img src="https://hosted.weblate.org/widgets/flameshot/-/flameshot/svg-badge.svg" alt="Translation status" />
-  </a>
   <a href="https://flameshot.org">
-      <img src="https://img.shields.io/github/release/kvbaxi/flameshot-nest-rip.svg?label=docs" alt="Docs" />
+      <img src="https://img.shields.io/github/release/flameshot-org/flameshot.svg?label=docs" alt="Docs" />
     </a>
   </p>
 </div>
