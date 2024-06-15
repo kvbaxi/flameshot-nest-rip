@@ -38,7 +38,9 @@ void ImgurUploader::handleReply(QNetworkReply* reply)
         //QJsonObject data = json[QStringLiteral("data")].toObject();
         setImageURL(data[QStringLiteral("fileURL")].toString());
 
-        auto deleteToken = data[QStringLiteral("deletionURL")].toString();
+
+        auto deleteURL = data[QStringLiteral("deletionURL")].toString();
+        auto deleteToken = deleteURL.section("/", -1, -1);
 
         // save history
         m_currentImageName = imageURL().toString();
@@ -90,7 +92,7 @@ void ImgurUploader::deleteImage(const QString& fileName,
 {
     Q_UNUSED(fileName)
     bool successful = QDesktopServices::openUrl(
-      QUrl(QStringLiteral("https://imgur.com/delete/%1").arg(deleteToken)));
+      QUrl(QStringLiteral("https://nest.rip/api/files/delete/%1").arg(deleteToken)));
     if (!successful) {
         notification()->showMessage(tr("Unable to open the URL."));
     }

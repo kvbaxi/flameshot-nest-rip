@@ -177,10 +177,9 @@ void ImgUploaderBase::copyImage()
 
 void ImgUploaderBase::deleteCurrentImage()
 {
-    m_notification->showMessage(tr("Currently deleting imagees is unsupported on this version!"));
-    // History history;
-    // HistoryFileName unpackFileName = history.unpackFileName(m_currentImageName);
-    // deleteImage(unpackFileName.file, unpackFileName.token);
+    History history;
+    HistoryFileName unpackFileName = history.unpackFileName(m_currentImageName);
+    deleteImage(unpackFileName.file, unpackFileName.token);
 }
 
 void ImgUploaderBase::saveScreenshotToFilesystem()
