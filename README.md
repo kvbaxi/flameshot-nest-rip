@@ -10,15 +10,6 @@
     <h4>Powerful yet simple to use screenshot software.</h4>
   </p>
   <p>
-    <a href="https://github.com/kvbaxi/flameshot-nest-rip/actions?query=workflow%3APackaging%28Linux%29">
-      <img src="https://img.shields.io/github/actions/workflow/status/kvbaxi/flameshot-nest-rip/Linux-pack.yml?branch=master&label=gnu%2Flinux" alt="GNU/Linux Build Status" />
-    </a>
-    <a href="https://github.com/kvbaxi/flameshot-nest-rip/actions?query=workflow%3APackaging%28Windows%29">
-      <img src="https://img.shields.io/github/actions/workflow/status/kvbaxi/flameshot-nest-rip/Windows-pack.yml?branch=master&label=windows" alt="Windows Build Status" />
-    </a>
-    <a href="https://github.com/kvbaxi/flameshot-nest-rip/actions?query=workflow%3APackaging%28MacOS%29">
-      <img src="https://img.shields.io/github/actions/workflow/status/kvbaxi/flameshot-nest-rip/MacOS-pack.yml?branch=master&label=macos" alt="MacOS Build Status" />
-    </a>
     <a href="https://github.com/kvbaxi/flameshot-nest-rip/releases">
       <img src="https://img.shields.io/github/release/kvbaxi/flameshot-nest-rip.svg" alt="Latest Stable Release" />
     </a>
@@ -40,8 +31,6 @@
     ❔ <code>Flameshot nest.rip</code> is a fork of flameshot created by <a href="https://github.com/kvbaxi" title="kvba">kvba</a>. I never could find fine screenshot tool except for this one... BUT it never had custom upload option. So after learning something about C++ I thought about making my fork with <a href="https://nest.rip" title="nest.rip">nest.rip</a> uploader instead!
     <br><br>
     <b>Will I add custom uploader option?</b> Maybe... maybe not now as there's quite a lot of stuff to modify.
-    <br><br>
-    <b>❗ Currently deletion URL doesn't work but I'm gonna try to work on it in future.</b>
     <br><br>
     <b>❗ Currently only building is supported due to my lack of packaging knowledge. (any help is appreciated!)</b>
     <br><br>
